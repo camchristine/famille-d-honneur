@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="css/stylerencontre.css">
+</head>
+<body>
+    <div class="container" >
+        <h3 style="margin-top: 50px;">Prêt à découvrir si nos chemins se croisent ? Remplissez simplement le formulaire pour organiser notre rencontre. Laissez-nous surprendre par ce que l'avenir nous réserve, ensemble.</h3>
+
+        <form action="#" enctype="multipart/form-data" method="POST">
+            <div class="background" style="background-image: url('images/23287.jpg')"></div> <!-- Div pour l'image d'arrière-plan -->
+            <div class="column">
+                <div class="form-group">
+                    <label for="nom"><span style="color: red;">*</span>Nom :</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <span class="required text-danger">ce champ est obligatoire*</span>
+                </div>
+                <div class="form-group">
+                    <label for="prenom"><span style="color: red;">*</span>Prénom :</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                    <span class="required text-danger">ce champ est obligatoire*</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form-group">
+                    <label for="telephone"><span style="color: red;">*</span>Téléphone :</label>
+                    <input type="text" id="contact" name="contact" required placeholder="Ex: 0701020304"> 
+                    <span class="required text-danger">ce champ est obligatoire*</span>
+                </div>
+                <div class="form-group">
+                    <label for="operateur"><span style="color: red;">*</span>Opérateur :</label>
+                    <select id="payment_method" name="payment_method" required>
+                        <option value="orange">Orange</option>
+                        <option value="mtn">MTN</option>
+                    </select>
+                    <span class="required text-danger">ce champ est obligatoire*</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="montant"><span style="color: red;">*</span>Montant :</label>
+                <input type="text" id="montant" name="montant" value="15000"  min="15000" max="15000" readonly required>
+                <span class="required text-danger">ce champ est obligatoire*</span>
+            </div>
+            <button type="submit" name="submit">Prendre un rendez-vous</button>
+        </form>
+    </div>
+</body>
+</html>

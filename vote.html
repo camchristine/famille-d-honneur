@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="css/styleachat.css">
+</head>
+<body>
+    <div class="container" >
+        <h3 style="margin-top: 50px;">Votez aujourd'hui pour des familles plus fortes et des lendemains meilleurs - chaque voix compte!</h3>
+
+        <form id="voteForm"  action="#" enctype="multipart/form-data" method="POST">
+            <div class="background" style="background-image: url('images/famille2.jpg');"></div> <!-- Div pour l'image d'arrière-plan -->
+            <div class="column">
+                <div class="form-group">
+                    <label for="nom"><span style="color: red;">*</span>Nom :</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom"><span style="color: red;">*</span>Prénom :</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+            </div>
+            <div class="column">
+                <div class="form-group">
+                    <label for="telephone"><span style="color: red;">*</span>Téléphone :</label>
+                    <input type="text" id="contact" name="contact" required placeholder="Ex: 0701020304"> 
+                </div>
+                <div class="form-group">
+                    <label for="operateur"><span style="color: red;">*</span>Opérateur :</label>
+                    <select id="payment_method" name="payment_method" required>
+                        <option value="orange">Orange</option>
+                        <option value="mtn">MTN</option>
+                        <option value="wave">WAVE</option>
+                        <option value="mastercard">MASTER CARD</option>
+
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="montant"><span style="color: red;">*</span>Montant :</label>
+                <input type="text" id="montant" name="montant"  value="200"  min="200" max="200" readonly required>
+            </div>
+            <button type="submit" name="submit">Voter</button>
+        </form>
+    </div>
+    
+</body>
+</html>
